@@ -1,0 +1,10 @@
+<div >
+    <ul class="post__list">
+        <li class="post" *ngFor="let p of posts | async">
+            <a routerLink="/comments/{{p.id}}">
+            <h2 class="post__title">{{p.title}}</h2>
+            <p class="post__body">{{p.body}}</p>
+            </a>
+        </li>
+    </ul>
+</div>

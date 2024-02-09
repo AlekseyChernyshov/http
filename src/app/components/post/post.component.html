@@ -1,0 +1,5 @@
+<div class="post">
+<p class="post__title">{{(post | async)?.title}}</p>
+<p class="post__body">{{(post| async)?.body}}</p>
+</div>
+<button (click)="goBack()">Go back</button>

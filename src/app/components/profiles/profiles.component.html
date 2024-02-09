@@ -1,0 +1,7 @@
+<div *ngIf="profile">
+<h3>{{profile.name}} |<span> {{profile.username}}</span></h3>
+<div *ngFor="let comment of comments">
+<a routerLink="/post/{{comment.postId}}"><p>{{comment.body}}</p></a>
+</div>
+<button (click)="goBack()">Go back</button>
+</div>

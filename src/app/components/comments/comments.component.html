@@ -1,0 +1,16 @@
+<div>
+    <ul class="comment__list">
+        <li class="comment" *ngFor="let c of comment |async">
+           <div class="comment__left">
+            <h3 class="comment__name">{{c.name}}</h3>
+            <a routerLink="/profiles/{{c.email}}">
+            <p class="comment__email">{{c.email}}</p>
+            </a>
+           </div>
+           <div class="comment__right">
+            <p class="comment__descr">{{c.body}}</p>
+           </div> 
+        </li>
+    </ul>
+    <button (click)="goBack()">Go back</button>
+</div>
